@@ -1,0 +1,23 @@
+<div id="container">
+  <div class="area-tarjeta">
+    <app-tarjeta-pokemon [pokemon]="pokemon">
+    </app-tarjeta-pokemon>
+
+    <app-tarjeta-mobile-pokemon [pokemon]="pokemon">
+    </app-tarjeta-mobile-pokemon>
+  </div>
+  <div class="area-caracteristicas">
+    <div class="caracteristicas-container">
+      <p><span class="etiqueta">Tipo</span><span class="tipo" *ngFor="let tipo of pokemon?.types"><span ngClass="{{tipo.type.name}}">{{tipo.type.name | titlecase }}</span></span></p>
+      <p><span class="etiqueta">Altura</span><span class="altura"><p>{{pokemon?.height}}M</p></span></p>
+      <p><span class="etiqueta">Peso</span><span class="peso"><p>{{pokemon?.weight}}KG</p></span></p>
+    </div>
+  </div>
+  <div class="area-descripcion">
+    <div id="descripcionContainer">
+      <div></div>
+      <p>{{descripcion}}</p>
+      <div></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,448 @@
+
+#container{
+  height: 100%;
+  width: 100%;
+  background-color: #fceab8;
+  display: flex;
+  flex-direction: column;
+
+  .area-tarjeta{
+    background-color: #bfc3ce;
+    background-image: linear-gradient(45deg, #c3c5c4 25%, transparent 25%, transparent 75%, #c3c5c4 75%, #c3c5c4),
+    linear-gradient(-45deg, #c3c5c4 25%, transparent 25%, transparent 75%, #c3c5c4 75%, #c3c5c4);
+    background-size: 20px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  app-tarjeta-pokemon{
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+
+  }
+
+  .area-caracteristicas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+    width: 100%;
+    background-color: #d3ecf6;
+    background-image: linear-gradient(45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8),
+    linear-gradient(-45deg, #c4e8f8 25%, transparent 25%, transparent 75%, #c4e8f8 75%, #c4e8f8);
+    background-size: 30px 30px;
+
+    font-size: larger;
+    p{
+      margin: 10px 5%;
+    }
+  }
+
+  .caracteristicas-container{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e4f0f8;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+
+
+
+  .area-descripcion{
+    background: repeating-linear-gradient(
+      0deg,
+      #cce486,
+      #cce486 2px,
+      #bfd678 2px,
+      #bfd678 4px,
+    );
+
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    p{
+      margin: 20px;
+    }
+  }
+}
+
+#descripcionContainer{
+  background-color: #f8f7db;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 40%;
+  height: 70%;
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  margin: 20px;
+}
+
+
+  .textContainer{
+    width: 100%;
+    height: 100%;
+  }
+
+  p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .etiqueta{
+    background-color: #66bcea;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: center;
+  }
+
+  /* CLASES PARA LOS TIPOS DE POKEMON */
+  .tipo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    background-color: #434753;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .bug{
+    background-color: #A8B820;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+
+  }
+  .normal{
+    background-color:  #A8A878;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+
+  .fire{
+    background-color:  #F08030;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+
+  .water{
+    background-color:#6890F0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+
+  .grass{
+    background-color:  #78C850;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+
+  .electric{
+    background-color: #F8D030;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+
+  .ice{
+    background-color:  #98D8D8;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+  .fighting{
+    background-color:  #C03028;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+  .poison{
+    background-color: #A040A0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+  .flying{
+    background-color:  #A890F0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+  .psychic{
+
+    background-color:  #F85888;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+  .rock{
+
+    background-color: #B8A038;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+  .ghost{
+
+   background-color: #705898;
+   width: 100%;
+   border-radius: 5px;
+   font-size: 1.2em;
+   color:white;
+  }
+  .dark{
+    background-color: #705848;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+  .dragon{
+    background-color: #7038F8;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+  .steel{
+    background-color: #B8B8D0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+  .fairy{
+    background-color: #F0B6BC;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color:white;
+  }
+
+  .ground{
+    background-color:#501912;
+    font-size: 1.2em;
+    width: 100%;
+    color:white;
+    border-radius: 5px;
+  }
+
+  .altura{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.1em;
+  }
+
+  .peso{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.1em;
+  }
+
+  .caracteristicas{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  @media screen and (max-width: 768px)
+  {
+      #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 60vh;
+      }
+
+      .area-tarjeta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        height: 15%;
+        padding: 0px 0px;
+        margin: 0px 0px;
+      }
+
+      app-tarjeta-pokemon{
+        display: none;
+      }
+
+      app-tarjeta-mobile-pokemon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .area-caracteristicas{
+        display: flex;
+        width: 100%;
+        height: 40%;
+        font-size: small;
+        p{
+          margin: 0px 0px;
+        }
+      }
+
+      .area-descripcion{
+        display: flex;
+        width: 100%;
+        height: 10%;
+      }
+
+      .caracteristicas-container{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #e4f0f8;
+      }
+
+      p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: .8em;
+        height: 10%;
+      }
+
+      .etiqueta{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #66bcea;
+        color: white;
+        border-radius: 5px;
+        font-size: .8em;
+        width: 40%;
+      }
+
+      #descripcionContainer{
+        width: 100%;
+      }
+
+      .bug{
+        font-size: .8em;
+      }
+      .normal{
+        font-size: .8em;
+      }
+
+      .fire{
+        font-size: .8em;
+      }
+
+      .water{
+        font-size: .8em;
+      }
+
+      .grass{
+        font-size: .8em;
+      }
+
+      .electric{
+        font-size: .8em;
+      }
+
+      .ice{
+        font-size: .8em;
+      }
+      .fighting{
+        font-size: .8em;
+      }
+      .poison{
+        font-size: .8em;
+      }
+      .flying{
+        font-size: .8em;
+      }
+      .psychic{
+
+        font-size: .8em;
+      }
+      .rock{
+
+        font-size: .8em;
+      }
+      .ghost{
+
+        font-size: .8em;
+      }
+      .dark{
+        font-size: .8em;
+      }
+      .dragon{
+        font-size: .8em;
+      }
+      .steel{
+        font-size: .8em;
+      }
+      .fairy{
+        font-size: .8em;
+      }
+
+      .ground{
+        font-size: .8em;
+      }
+
+      .altura{
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: .8em;
+      }
+
+      .peso{
+        width: 20%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: .8em;
+      }
+
+      .caracteristicas{
+        display: flex;
+        flex-direction: column;
+      }
+
+}
